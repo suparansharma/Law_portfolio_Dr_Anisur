@@ -29,6 +29,11 @@ export const metadata: Metadata = {
       },
     ],
   },
+  icons: {
+    icon: "/dr-anisur-rahman.jpeg",
+    shortcut: "/dr-anisur-rahman.jpeg",
+    apple: "/dr-anisur-rahman.jpeg",
+  },
 };
 
 export default function RootLayout({
@@ -38,6 +43,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
+      <head>
+        <link rel="icon" href="/dr-anisur-rahman.jpeg?v=2" type="image/jpeg" />
+        <link rel="shortcut icon" href="/dr-anisur-rahman.jpeg?v=2" type="image/jpeg" />
+        <link rel="apple-touch-icon" href="/dr-anisur-rahman.jpeg?v=2" />
+      </head>
       <body
         className="font-sans bg-legal-950 text-slate-100 antialiased selection:bg-gold-500/30 selection:text-gold-200 min-h-screen"
       >
