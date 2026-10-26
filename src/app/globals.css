@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #06090f;
+    color: #e2e8f0;
+    overflow-x: hidden;
+  }
+}
+
+/* Custom Luxury Law Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0b1120;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cda043;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #dfb672;
+}
+
+/* Gold Text Gradient Utility */
+.gold-gradient-text {
+  background: linear-gradient(135deg, #dfb672 0%, #fff2d6 40%, #cda043 70%, #9c7322 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Glassmorphism for Law Panels */
+.legal-card {
+  background: rgba(16, 24, 43, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(205, 160, 67, 0.15);
+  transition: all 0.3s ease;
+}
+
+.legal-card:hover {
+  border-color: rgba(205, 160, 67, 0.45);
+  box-shadow: 0 10px 30px -10px rgba(205, 160, 67, 0.15);
+}
+
+/* Legal Pattern Overlay */
+.legal-grid-pattern {
+  background-image: radial-gradient(rgba(205, 160, 67, 0.08) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
